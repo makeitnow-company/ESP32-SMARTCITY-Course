@@ -1,8 +1,8 @@
 #define BLYNK_PRINT Serial
 
-#define BLYNK_TEMPLATE_ID "TMPLdbqVFzI7"
-#define BLYNK_DEVICE_NAME "Quickstart Template"
-#define BLYNK_AUTH_TOKEN "nlSZTq9JuG-sI5-qmhxIsTkXEheM42oQ"
+#define BLYNK_TEMPLATE_ID "********"
+#define BLYNK_DEVICE_NAME "********"
+#define BLYNK_AUTH_TOKEN "*********"
 
 #include <WiFi.h>
 #include <WiFiClient.h>
@@ -42,12 +42,12 @@ void securityEvent()
 
   if(securityMode){
     if(windowOpen){
-      Blynk.virtualWrite(V1, "창문 침입 감지");    
+      Blynk.virtualWrite(V2, "창문 침입 감지");    
     }else if(doorOpen){
-      Blynk.virtualWrite(V2, "출입문 침입 감지");    
+      Blynk.virtualWrite(V1, "출입문 침입 감지");    
     }else{
-      Blynk.virtualWrite(V1, "창문 보안 작동중");    
-      Blynk.virtualWrite(V2, "출입문 보안 작동중");    
+      Blynk.virtualWrite(V2, "창문 보안 작동중");    
+      Blynk.virtualWrite(V1, "출입문 보안 작동중");    
     }
   }else{
       Blynk.virtualWrite(V1, "출입문 보안 해제 해제중"); 

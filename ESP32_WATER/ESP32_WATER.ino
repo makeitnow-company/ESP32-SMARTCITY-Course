@@ -5,7 +5,7 @@ void setup(){
 }
 
 void loop(){
-  int cds_value = analogRead(WATERSENSOR);
-  Serial.println(cds_value);
+  int water_value = analogRead(WATERSENSOR);
+  Serial.println(water_value);
   delay(300);
 }

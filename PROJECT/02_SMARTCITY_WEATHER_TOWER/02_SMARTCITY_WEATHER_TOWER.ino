@@ -31,7 +31,6 @@ BlynkTimer timer;
 DHT dht(DHTPIN, DHTTYPE);                
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
-boolean rain;
 int voMeasured;
 float calcVoltage, dustDensity, temp, humidity;
 

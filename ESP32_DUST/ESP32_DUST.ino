@@ -17,6 +17,7 @@ void loop()
   delayMicroseconds(9680);
   float calcVoltage = voMeasured * (3.3 / 4095);
   float dustDensity = 170 * calcVoltage - 0.1;
+  if(dustDensity<=0) dustDensity = 0;
   Serial.print("dust : ");
   Serial.print(dustDensity);
   Serial.println("ug/m3");

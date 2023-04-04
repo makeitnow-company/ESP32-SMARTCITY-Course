@@ -10,15 +10,15 @@ void setup() {
 
 void loop() {
   digitalWrite(LED_RED,HIGH);
-  digitalWrite(LED_YELLOW, LOW);
-  digitalWrite(LED_GREEN, LOW);
+  digitalWrite(LED_YELLOW,LOW);
+  digitalWrite(LED_GREEN,LOW);
   delay(1000);
-  digitalWrite(LED_RED,HIGH);
-  digitalWrite(LED_YELLOW, LOW);
-  digitalWrite(LED_GREEN, LOW);
+  digitalWrite(LED_RED,LOW);
+  digitalWrite(LED_YELLOW,HIGH);
+  digitalWrite(LED_GREEN,LOW);
   delay(1000);
-  digitalWrite(LED_RED,HIGH);
-  digitalWrite(LED_YELLOW, LOW);
-  digitalWrite(LED_GREEN, LOW);
+  digitalWrite(LED_RED,LOW);
+  digitalWrite(LED_YELLOW,LOW);
+  digitalWrite(LED_GREEN,HIGH);
   delay(1000);
 }

@@ -6,7 +6,7 @@ void setup() {
 }
 
 void loop() {
-  if(!digitalRead(HALL_SENSOR)){
+  if(!digitalRead(HALLSENSOR)){
     Serial.println("자성감지");
     delay(300);
   }
